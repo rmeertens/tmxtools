@@ -11,7 +11,7 @@
   <prop type="name">Test1 Dutch</prop>
 </header>
 <body>
-  <tu changedate="20160224T055705Z" creationdate="20160211T215118Z" creationid="roland.meertens" changeid="roland.meertens">
+ <tu changedate="20160224T055705Z" creationdate="20160211T215118Z" creationid="roland.meertens" changeid="roland.meertens">
     <prop type="client">TestClient</prop>
     <prop type="project">TestProject</prop>
     <prop type="domain">TestDomain</prop>
@@ -26,6 +26,33 @@
     </tuv>
     <tuv xml:lang="nl">
       <seg>Test deze invoer</seg>
+    </tuv>
+  </tu>
+  <tu changedate="20160224T055705Z" creationdate="20160211T215118Z" creationid="roland.meertens" changeid="roland.meertens">
+    <prop type="client">TestClient</prop>
+    <prop type="project">TestProject</prop>
+    <prop type="domain">TestDomain</prop>
+    <prop type="subject">TestSubject</prop>
+    <prop type="corrected">no</prop>
+    <prop type="aligned">no</prop>
+    <prop type="x-document">cze1425932728866.xml</prop>
+    <tuv xml:lang="en">
+      <prop type="x-context-pre">TestContext</prop>
+      <prop type="x-context-post">TestContext</prop>
+      <seg><bpt i="1">hey</bpt>Test this input</seg>
+    </tuv>
+    <tuv xml:lang="nl">
+      <seg><bpt i="1">hallo</bpt>Test deze invoer</seg>
+    </tuv>
+  </tu>
+  <tu>
+    <tuv xml:lang="en">
+      <seg><bpt i="1">somecontrol</bpt>Return Qty.<ept i="1">/somecontrol</ept>: Enter the quantity of the part to be returned.
+    </seg>
+    </tuv>
+    <tuv xml:lang="nl">
+      <seg><bpt i="1">somecontrol</bpt>Terugstuur quantity<ept i="1">/somecontrol</ept>: specificeer de terug te sturen kwantiteit.
+    </seg>
     </tuv>
   </tu>
 </body>

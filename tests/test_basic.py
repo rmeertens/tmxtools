@@ -11,8 +11,8 @@ class allTests(unittest.TestCase):
         for inputsentence, outputsentence in split_translation_memory.get_input_output("tests/testfiles/test1.tmx"):
             inputsread.append(inputsentence)
             outputsread.append(outputsentence)
-        self.assertEqual(len(inputsread),1)
-        self.assertEqual(len(outputsread), 1)
+        self.assertEqual(len(inputsread), 3)
+        self.assertEqual(len(outputsread), 3)
         self.assertEqual(inputsread[0], "Test this input")
         self.assertEqual(outputsread[0], "Test deze invoer")
 

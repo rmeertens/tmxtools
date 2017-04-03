@@ -9,11 +9,16 @@ def get_input_output(tmxpath):
         values = []
         for index, translation_value in enumerate(tu.findall('tuv')):
             segment = translation_value.find('seg')
-            values.append(segment.text)
+            values.append(content(segment))
         if len(values) == 2:
             if values[0] and values[1]:
                 yield values[0],values[1]
 
+def content(tag,encoding='utf-8'):
+    ending = ''.join(ElementTree.tostring(e).decode(encoding) for e in tag)
+    if tag.text:
+        return tag.text + ending
+    return ending
 
 if __name__ == "__main__":
     import argparse
