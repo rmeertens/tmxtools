@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE tmx SYSTEM "tmx14.dtd">
+<tmx version="1.4">
+<header creationtool="MemoQ" creationtoolversion="7.5.64" segtype="sentence" adminlang="en-us" creationid="ROLAND" srclang="en" o-tmf="MemoQTM" datatype="unknown">
+  <prop type="defclient">TestClient</prop>
+  <prop type="defproject">TestProject</prop>
+  <prop type="defdomain">TestDomain</prop>
+  <prop type="defsubject">TestSubject</prop>
+  <prop type="description">TestDescription</prop>
+  <prop type="targetlang">nl</prop>
+  <prop type="name">Test1 Dutch</prop>
+</header>
+<body>
+  <tu changedate="20160224T055705Z" creationdate="20160211T215118Z" creationid="roland.meertens" changeid="roland.meertens">
+    <prop type="client">TestClient</prop>
+    <prop type="project">TestProject</prop>
+    <prop type="domain">TestDomain</prop>
+    <prop type="subject">TestSubject</prop>
+    <prop type="corrected">no</prop>
+    <prop type="aligned">no</prop>
+    <prop type="x-document">cze1425932728866.xml</prop>
+    <tuv xml:lang="en">
+      <prop type="x-context-pre">TestContext</prop>
+      <prop type="x-context-post">TestContext</prop>
+      <seg>Test this input</seg>
+    </tuv>
+    <tuv xml:lang="nl">
+      <seg>Test deze invoer</seg>
+    </tuv>
+  </tu>
+</body>
+</tmx>
