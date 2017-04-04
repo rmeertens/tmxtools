@@ -1,4 +1,3 @@
-
 import os
 import xml.etree.ElementTree as ElementTree
 HEAD = 0
@@ -6,7 +5,8 @@ BODY = 1
 
 
 def is_tmx_valid(filepath):
-    return filepath_exists(filepath)  and has_header_and_body(filepath) and only_contains_tu_elements(filepath)
+    return filepath_exists(filepath) and has_header_and_body(
+        filepath) and only_contains_tu_elements(filepath)
 
 
 def filepath_exists(filepath):
@@ -45,12 +45,13 @@ def only_contains_tu_elements(filepath):
             return False
     return True
 
+
 if __name__ == "__main__":
     import argparse
 
     parser = argparse.ArgumentParser()
-    parser.add_argument("tmxfile", help="path to tmxfile you want to know is valid or not")
+    parser.add_argument(
+        "tmxfile", help="path to tmxfile you want to know is valid or not")
     args = parser.parse_args()
 
     print("%s is valid: %s" % (args.tmxfile, is_tmx_valid(args.tmxfile)))
-
