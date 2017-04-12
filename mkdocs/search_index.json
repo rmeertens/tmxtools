@@ -1,0 +1,14 @@
+{
+    "docs": [
+        {
+            "location": "/",
+            "text": "Hello world",
+            "title": "Introduction"
+        },
+        {
+            "location": "/#hello-world",
+            "text": "",
+            "title": "Hello world"
+        }
+    ]
+}
